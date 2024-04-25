@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import NVD_EventForm1 from './components/NVD_EventForm1'
+import NVD_EventForm2 from './components/NVD_EventForm2'
+import NVD_EventForm3 from './components/NVD_EventForm3'
+import NVD_EventForm4 from './components/NVD_EventForm4'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className='contaier'>
+        <h1>Event From Duoc04</h1>
+        <NVD_EventForm1 />
+        <NVD_EventForm2 />
+        <NVD_EventForm3 />
+        <NVD_EventForm4 name="Nguyễn Văn Được" />
+      </div>
+    )
+  }
 }
-
-export default App;
